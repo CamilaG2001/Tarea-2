@@ -1,0 +1,138 @@
+/* ===== RESET Y BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf0f6;
+    color: #2c2c2c;
+    padding: 30px 16px;
+}
+
+.contenedor {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+/* ===== ENCABEZADO ===== */
+.tarjeta-header {
+    background-color: #ffffff;
+    border: 1px solid #ccd9e8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.barra-top {
+    background-color: #2a6496;
+    height: 8px;
+    width: 100%;
+}
+
+.header-contenido {
+    padding: 20px 24px 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #2a6496;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.header-texto h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 3px;
+}
+
+.header-texto .etiqueta-cv {
+    font-size: 11px;
+    color: #2a6496;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ===== TARJETAS Y CONTACTO ===== */
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #ccd9e8;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 14px;
+}
+
+.tarjeta h2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: #2a6496;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dce8f2;
+}
+
+.filas-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+.fila { display: flex; flex-direction: column; gap: 2px; }
+.fila .campo { font-size: 9px; font-weight: bold; text-transform: uppercase; color: #999; }
+.fila .valor { font-size: 13px; color: #2c2c2c; }
+
+/* ===== INTERACTIVIDAD (DROPDOWN) ===== */
+.select-info {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd9e8;
+    border-radius: 5px;
+    background-color: #f5f9fc;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.panel-info {
+    display: none;
+    background-color: #f0f6fc;
+    border-left: 4px solid #2a6496;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+/* ===== PROYECTOS GRID ===== */
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.proyecto-card {
+    border: 1px solid #ccd9e8;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: #f8fbff;
+    text-align: center;
+}
+
+.proyecto-card h3 { font-size: 13px; margin-bottom: 8px; }
+.proyecto-card a { font-size: 11px; color: #2a6496; font-weight: bold; text-decoration: none; border: 1px solid #2a6496; padding: 4px 8px; border-radius: 4px; }
+
+footer { text-align: center; font-size: 11px; color: #aaa; margin-top: 10px; }

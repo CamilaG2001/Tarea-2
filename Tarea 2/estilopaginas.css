@@ -1,0 +1,49 @@
+/* ESTILOS PARA PAGINAS DE PROYECTOS */
+.btn-volver {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: #2a6496;
+    text-decoration: none;
+    border: 1px solid #2a6496;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-volver:hover {
+    background-color: #2a6496;
+    color: white;
+}
+
+.proyecto-imagen-grande {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd9e8;
+}
+
+.detalle-proyecto h1 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.detalle-proyecto h3 {
+    font-size: 14px;
+    color: #2a6496;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-bottom: 1px solid #dce8f2;
+    padding-bottom: 5px;
+}
+
+.detalle-proyecto p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+    margin-top: 8px;
+}

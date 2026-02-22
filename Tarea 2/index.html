@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Camila Gomez Ramirez</title>
+  <link rel="stylesheet" href="estiloindex.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+  <div class="tarjeta-header">
+    <div class="barra-top"></div>
+    <div class="header-contenido">
+      <div class="avatar">CG</div>
+      <div class="header-texto">
+        <h1>Camila Gomez Ramirez</h1>
+        <span class="etiqueta-cv">&#128196; Curriculum Vitae</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <h2>Informacion de contacto</h2>
+    <div class="filas-contacto">
+      <div class="fila">
+        <span class="campo">Nombre</span>
+        <span class="valor">Camila Gomez Ramirez</span>
+      </div>
+      <div class="fila">
+        <span class="campo">Telefono</span>
+        <span class="valor">+506 8888-8888</span>
+      </div>
+      <div class="fila">
+        <span class="campo">Correo</span>
+        <span class="valor"><a href="mailto:cami@gmail.com">cami@gmail.com</a></span>
+      </div>
+      <div class="fila">
+        <span class="campo">Ubicacion</span>
+        <span class="valor">Costa Rica</span>
+      </div>
+      <div class="fila ancho-completo">
+        <span class="campo">Institucion</span>
+        <span class="valor">Estudiante de Informatica — Colegio Universitario de Cartago (CUC)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <h2>Informacion adicional</h2>
+    <select class="select-info" onchange="mostrarPanel(this.value)">
+      <option value="">Seleccione una opcion...</option>
+      <option value="cualidades">Cualidades personales</option>
+      <option value="tecnicas">Habilidades tecnicas</option>
+      <option value="blandas">Habilidades blandas</option>
+    </select>
+
+    <div class="panel-info" id="panel-cualidades">
+      <h3>Cualidades personales</h3>
+      <p>Soy una persona comprometida y con mucha disposicion para aprender. Me apasiona la tecnologia y el desarrollo de software. Me caracteriza la perseverancia para enfrentar retos nuevos.</p>
+    </div>
+
+    <div class="panel-info" id="panel-tecnicas">
+      <h3>Habilidades tecnicas</h3>
+      <p><strong>Python, Java, C#, HTML, CSS y SQL.</p>
+    </div>
+
+    <div class="panel-info" id="panel-blandas">
+      <h3>Habilidades blandas</h3>
+      <p>Buena comunicacion, responsabilidad, adaptabilidad ante nuevos desafios y capacidad de autoaprendizaje.</p>
+    </div>
+  </div>
+
+  <div class="tarjeta">
+    <h2>Proyectos destacados</h2>
+    <div class="proyectos-grid">
+      <div class="proyecto-card">
+        <div class="num">Proyecto 01</div>
+        <h3>SINAC — Chirripo</h3>
+        <p>Sistema de gestión de reservas.</p>
+        <a href="proyecto1.html">Ver proyecto &rarr;</a>
+      </div>
+      <div class="proyecto-card">
+        <div class="num">Proyecto 02</div>
+        <h3>Zoologico ZooAve</h3>
+        <p>Gestión de animales y personal.</p>
+        <a href="proyecto2.html">Ver proyecto &rarr;</a>
+      </div>
+      <div class="proyecto-card">
+        <div class="num">Proyecto 03</div>
+        <h3>AgroMon</h3>
+        <p>Monitoreo inteligente agrícola.</p>
+        <a href="proyecto3.html">Ver proyecto &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>Curso: Programacion IV &nbsp;|&nbsp; Camila Gomez Ramirez &nbsp;|&nbsp; 2026</footer>
+</div>
+
+<script>
+  function mostrarPanel(valor) {
+    // 1. Ocultamos todos los paneles primero
+    document.getElementById('panel-cualidades').style.display = 'none';
+    document.getElementById('panel-tecnicas').style.display = 'none';
+    document.getElementById('panel-blandas').style.display = 'none';
+
+    // 2. Si el usuario seleccionó algo, mostramos ese panel específico
+    if (valor !== '') {
+      var panelSeleccionado = document.getElementById('panel-' + valor);
+      if (panelSeleccionado) {
+        panelSeleccionado.style.display = 'block';
+      }
+    }
+  }
+</script>
+</body>
+</html>
